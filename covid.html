@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bot Covid-19</title>
+	<meta name="og:description" content="Muhidayat Bot Covid">
+	<link rel="icon" type="png/image" href="logoooo.png">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scalable=no">
+	<style type="text/css">
+		@media (max-width: 576px) {
+
+		body {
+			width:auto;
+			height: 100%;
+			text-align: center;
+			background-color: #EFE6DD;
+			}
+		#mymessage {
+		text-align: right;
+		margin-top: 20px;
+		margin-bottom:20px;
+		margin-right: 20px;
+		padding: 10px;
+		width: 40%;
+		margin-left: 50%;
+		border-radius: 5px;
+		font-size: 17px;
+		background-color: #E2FFC7;
+		font-family: 'arial';
+		font-weight: 400;
+		}
+		}
+		@media (min-width: 780px) {
+		body {
+			width:auto;
+			height: 100%;
+			text-align: center;
+			background-color: #EFE6DD;
+		}
+		#mymessage {
+		text-align: right;
+		margin-top: 20px;
+		margin-bottom:20px;
+		margin-right: 20px;
+		padding: 10px;
+		width: 40%;
+		margin-left: 55%;
+		border-radius: 5px;
+		font-size: 17px;
+		background-color: #E2FFC7;
+		font-family: 'arial';
+		font-weight: 400;
+		}
+		}
+		@media (min-width: 1200px) {
+		body {
+			text-align: center;
+			margin-left: 25%;
+			margin-right: 25%;
+			background-color: #EFE6DD;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: red;
+		}
+		@font-face {
+			font-family: header;
+			src: url(loli.ttf);
+		}
+		@keyframes skew {
+			0% 50% 100% { animation-timing-function: cubic-bezier(0.4,0,1,0.6); }
+			   25% 75%  { animation-timing-function: cubic-bezier(0,0.4,0.6,1); }
+			0% {transform: skewY(10deg) scale(1);}
+			25% {transform: skewY(0deg) scale(0.9);}
+			50% {transform: skewY(-10deg) scale(1);}
+			75% {transform: skewY(0deg) scale(0.9);}
+			100% {transform: skewY(10deg) scale(1);}
+		}
+		h1 {
+			font-size: 60px;
+			font-family: 'header';
+			font-weight: 500;
+			letter-spacing: 4px;
+			animation: skew 1s infinite linear;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.darktheme {
+			color: white;
+			width: 20%;
+			padding: 10px;
+			margin: 20px;
+			background-color: #101D25;
+			border: 2px solid #054640;
+			border-radius: 5px;
+			box-shadow: 3px 3px #054640;
+			cursor: pointer;
+		}
+		.lighttheme {
+			color: black;
+			width: 20%;
+			padding: 10px;
+			margin: 20px;
+			background-color: white;
+			border: 2px solid #054640;
+			border-radius: 5px;
+			box-shadow: 3px 3px #054640;
+			cursor: pointer;
+		}
+		
+		#mymessage img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			text-align: left;
+		}
+		#message {
+			text-align: left;
+			margin: 20px;
+			padding: 10px;
+			width: 70%;
+			border-radius: 5px;
+			font-size: 17px;
+			background-color: white;
+			font-family: 'arial';
+			font-weight: 400;
+		}
+		#input {
+			width: 45%;
+			background-color: white;
+			border: 1px solid grey;
+			border-radius: 5px;
+			padding: 5px 10px;
+		}
+		#submit {
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: 1px solid grey;
+		}
+	</style>
+	<script language="javascript">
+		function themedark() {
+			var bg = document.getElementById('body');
+			bg.style.backgroundColor = '#101D25';
+			bg.style.color = 'white';
+			var mymessage = document.getElementById('mymessage');
+			mymessage.style.backgroundColor = '#054640';
+			var message = document.getElementById('message');
+			message.style.backgroundColor = '#212E36';
+		}
+		function themelight() {
+			var bg = document.getElementById('body');
+			bg.style.backgroundColor = '#EFE6DD';
+			bg.style.color = 'black';
+			var mymessage = document.getElementById('mymessage');
+			mymessage.style.backgroundColor = '#E2FFC7';
+			var message = document.getElementById('message');
+			message.style.backgroundColor = 'white';
+		}
+		function covid() {
+			date = new Date();
+			jam = date.getHours();
+			menit = date.getMinutes();
+			var halo = "Apa saja sih yang ingin kamu ketahui mengenai Covid-19? <br> 1. Kabar Covid-19 terkini di Indonesia <br>2. Sebenarnya apa sih Covid-19 itu?<br>3. Apa saja gejala Covid-19? <br>4. Bagaimana cara melindungi diri?<br>5. Bagaimana cara melindungi orang lain? <br>6. Masker perlu gak sih? <br>7. Rumah Sakit Rujukan Covid-19.<br><br>Ketik 1, 2, 3, 4, 5, 6, atau 7 lalu kirim ke kami. Maka, kami akan menjawab pertanyaan kamu. <br>Bagikan info akurat tentang COVID-19 ke teman dan keluargamu<br><a href='https://www.covid19.go.id'>https://www.covid19.go.id</a><br><a href='telp:081133399000'>0811 333 99 000</a><br><br>Mari saling melindungi dari virus corona dengan mengunduh aplikasi pedulilindungi di <a href='https://www.pedulilindungi.id'>www.pedulilindungi.id</a><br><br>Hotline 119 untuk mendapatkan bantuan apabila ada gejala<br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Pukul " + jam + ":" + menit;
+
+			var one = "Situasi virus corona (COVID-19) 15 April 2020<br><br>Global<br>Negara / Kawasan: 213<br>Kasus Terkonfirmasi: 1.878.489<br>Kematian: 119.044<br><br>Indonesia<br>Positif: 5.136<br>Sembuh: 446<br>Meninggal: 469<br><br>Untuk info peta sebaran COVID-19 bisa klik link berikut <a href='https://www.covid19.go.id/situasi-virus-corona/'>https://www.covid19.go.id/situasi-virus-corona/</a><br><br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+
+			var two = "Coronavirus itu merupakan keluarga besar virus yang dapat menyerang manusia dan hewan. Nah, pada manusia, biasanya menyebabkan penyakit infeksi saluran pernafasan, mulai dari flu biasa hingga penyakit serius, seperti MERS dan SARS. <br><br>Covid-19 sendiri merupakan coronavirus jenis baru yang ditemukan pada manusia di daerah Wuhan, Provinsi Hubei, China pada tahun 2019.<br><br><br>Maka dari itu, Coronavirus jenis baru ini diberi nama Coronavirus Disease-2019 yang disingkat menjadi Covid-19.<br><br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+
+			var three = "Gejala Covid-19 ini pada umumnya berupa:<br><br>✅ Demam 38°C<br><br>✅ Batuk kering<br><br>✅ Sesak nafas<br><br>Nah, kalau kamu habis berpergian dan 14 hari kemudian mengalami gejala ini, segera ke Rumah Sakit rujukan untuk memeriksakan diri kamu lebih menyeluruh. Oh ya, saat ke Rumah Sakit, jangan menggunakan transportasi umum ya.<br><br>Kenapa? Untuk mencegah penyebaran Covid-19 lebih luas.<br><br>Bisa hubungi 119 untuk mendapatkan bantuan lebih lanjut.<br><br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Kamu mau tahu Rumah Sakit mana saja yang menjadi rujukan? Ketik 7, atau ada lagi yang ingin kamu tanyakan? Kalau ada,<br>ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+
+			var four = "Tunjukkan aksimu! <br><br>Lindungi diri. Lindungi sesama.<br><br>Apa AKSI nyata yang dapat kamu lakukan? <br><br>✅ Tetap di rumah. Bekerja, belajar dan beribadah di rumah<br><br>✅ Jaga jarak minimal 1 meter dengan orang di lain<br>✅ Jangan kontak langsung dengan orang bergejala COVID-19. Lakukan komunikasi via telepon, chat atau video call<br><br>✅ Hindari kerumunan<br><br>✅ Jangan sentuh mata, hidung dan mulut<br><br>✅ Selalu cuci tangan pakai sabun dan air mengalir! Sebelum makan dan menyiapkan makanan, setelah dari toilet, setelah memegang binatang dan sehabis berpergian<br><br>✅ Ketika batuk atau bersin, tutup mulut dan hidung dengan siku terlipat atau tisu. Buang langsung tisu ke tempat sampah setelah digunakan<br><br>✅ Beritahu petugas kesehatan jika kamu mengalami gejala, pernah kontak erat dengan orang bergejala atau bepergian ke wilayah terjangkit COVID-19<br><br>✅ Jika petugas kesehatan menyatakan kamu harus isolasi diri, maka patuhi agar lekas sembuh dan tidak menulari orang lain<br><br>✅ Bersikaplah terbuka tentang statusmu pada orang lain di sekitar. Ini adalah bentuk nyata kepedulianmu pada diri sendiri dan sesama<br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+
+			var five = "Yang bisa kamu lakukan untuk melindungi orang-orang terdekatmu dari Covid-19, yaitu:<br><br>✅Saat kamu batuk atau bersin, jangan lupa untuk menjauh dan menutup mulut serta  hidung kamu dengan tissue, saputangan, atau lipatan siku.<br><br>✅Segera membuang tisu atau masker yang telah kamu gunakan ke tempat sampah. <br><br>✅Jangan lupa untuk merobek masker yang telah digunakan ya, untuk mencegah penggunaan ulang masker. <br><br>✅Jangan lupa untuk mencuci tanganmu dengan sabun setelah batuk atau bersin. <br><br>✅Jangan meludah disembarang tempat<br><br>✅Segera menghubungi Rumah Sakit rujukan bila orang terdekatmu mengalami gejala Covid-19 dengan menghubungi 119<br><br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+
+			var six = "Semua orang harus menggunakan masker kalau terpaksa beraktivitas di luar rumah.<br><br>Kamu bisa menggunakan masker kain tiga lapis yang dapat dicuci dan digunakan berkali-kali, agar masker bedah dan N-95 yang sekali pakai bisa ditujukan untuk petugas medis.<br><br>Jangan lupa untuk mencuci masker kain menggunakan air sabun agar tetap bersih dan efektif untuk mencegah penyebaran virus COVID-19.<br><br>Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Kementerian Kesehatan sudah menentukan 132 Rumah Sakit rujukan untuk menangani kasus Covid-19.<br><br>Untuk meminimalisir membludaknya isi chat kamu, saya perlu tahu kamu berada di Provinsi mana. Jawab saja kamu berada di Provinsi mana, contohnya Jawa Barat. <br><br>Ada info baru tentang #MaskerUntukSemua ketik 6 untuk mempelajari lebih lanjut,<br><br>#LawanBersamaCovid19<br>#DiRumahAja<br>#JagaJarak<br>#MaskerUntukSemua<br><br>Atau kamu bisa ketik MENU untuk kembali ke menu utama, atau ketik SELESAI bila mau mengakhiri perbincangan kita hari ini.<br><br>Pukul " + jam + ":" + menit;
+			arrayAngka = document.getElementById('input').value;
+
+			if (arrayAngka == 'Menu') {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=halo;
+			}
+			else if (arrayAngka == 'MENU') {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=halo;
+			}
+			else if (arrayAngka == 'menu') {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=halo;
+			}
+			else if (arrayAngka == '1') {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=one;
+			}
+			else if (arrayAngka == "2") {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=two;
+			}
+			else if (arrayAngka == "3") {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=three;
+			}
+			else if (arrayAngka == "4") {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=four;
+			}
+			else if (arrayAngka == "5") {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=five;
+			}
+			else if (arrayAngka == "6") {
+				document.getElementById('mymessage').innerHTML=arrayAngka;
+				document.getElementById('message').innerHTML=six;
+			}
+			else if (arrayAngka == "7") {
+				alert("Sabar Bosss Lo kira ezz apa ?");
+			}
+			else if (arrayAngka == "Selesai") {
+				var exit = confirm("Ingin Akhiri percakapan ini ?");
+				if (exit == true) {
+					alert("Terima kasih sudah berkunjung");
+					window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=Im Exitz" );
+				}
+				else {
+					alert("Terima kasih untuk tetap disini");
+				}
+			}
+			else if (arrayAngka == "SELESAI") {
+				var exit = confirm("Ingin Akhiri percakapan ini ?");
+				if (exit == true) {
+					alert("Terima kasih sudah berkunjung");
+					window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=I'm Exit");
+				}
+				else {
+					alert("Terima kasih untuk tetap disini");
+				}
+			}
+			else if (arrayAngka == "selesai") {
+				var exit = confirm("Ingin Akhiri percakapan ini ?");
+				if (exit == true) {
+					alert("Terima kasih sudah berkunjung");
+					window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=I'm Exit");
+				}
+				else {
+					alert("Terima kasih tetap disini");
+				}
+			}
+			else {
+				alert("Periksa inputan anda");
+			}
+		}
+	</script>
+</head>
+<body id="body">
+	<h1><b>Chat Bot Covid-19<b></h1>
+	<button type="button" onclick="themedark()" class="darktheme">Dark</button>
+	<button type="button" onclick="themelight()" class="lighttheme">Light</button>
+	<div id="mymessage">
+		Chat Bot Covid <br><a href="">&copy; Muhidayat</a>
+	</div>
+	<div id="message">
+		<center style="color:red">Cara Menggunakan ! </center><br>
+		Ketik "Menu" untuk menampilkan menu pilihan <br>
+		Lalu ketik "Selesai" untuk mengakhiri chat <br><br>
+		<center style="color:red;">Note !!! </center> <br>
+		Ini Diupdate tiap hari kalo ada pembaruan info <br>
+		Sumber? Bot Covid-19 <br>
+		W bikin soalnya Gabut Broo <br>
+		Selamat Menikmati
+	</div>
+	<input type="text" id="input" placeholder="Ketik pesan" required="">
+	<button type="button" id="submit" onclick="covid()">Kirim </button>
